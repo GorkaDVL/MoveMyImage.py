@@ -1,2 +1,2 @@
 # MoveMyImage.py
-Script Python permettant de déplacer automatique des fichiers images vers un autre dossier
+Script Python permettant de déplacer automatiquement des fichiers images vers un autre dossier.
