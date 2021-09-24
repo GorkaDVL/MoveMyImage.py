@@ -11,7 +11,7 @@ class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
         new_name = "Image" + str(self.i) + ".PNG"
         for filename in os.listdir(folder_to_track):
-            if filename.endswith(".PNG"):
+            if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
                 file_exists = os.path.isfile(folder_destination + "/" + new_name)
                 while file_exists:
                     self.i += 1
